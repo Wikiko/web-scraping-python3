@@ -8,5 +8,5 @@ bsObj = BeautifulSoup(html.read(), 'html.parser')
 def length(iterator):
     return reduce(lambda acc, currentValue: acc + 1 if currentValue is not None else 0 , iterator, 0)
 
-for child in bsObj.find('table', id='giftList').descendants:
+for child in bsObj.find('table', id='giftList').children:
     print(child)
