@@ -10,12 +10,12 @@ random.seed(datetime.datetime.now())
 
 def getLinks(articleUrl):
     try:
-        html = urlopen('http://en.wikipedia.org{articleUrl}'.format(articleUrl=articleUrl))
+        html = urlopen(
+            'http://en.wikipedia.org{articleUrl}'.format(articleUrl=articleUrl))
         bsObj = BeautifulSoup(html.read(), 'html.parser')
         return bsObj.find('div', id='bodyContent').findAll('a', href=re.compile('^(/wiki/)'))
     except (HTTPError, AttributeError) as e:
         return None
-    
 
 
 links = getLinks('/wiki/Kevin_Bacon')
