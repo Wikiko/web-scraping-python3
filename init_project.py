@@ -43,7 +43,7 @@ def main():
         if env_creation_result is True:
             print('env created with sucessfull')
 
-            print('Congratulations all is ready to go aread...')
+            print('Congratulations all is ready to go ahead...')
     else:
         print('Sorry something was wrong.')
 
