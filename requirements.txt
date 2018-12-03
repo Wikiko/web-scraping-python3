@@ -3,3 +3,4 @@ pillow
 pytesseract
 numpy
 scrapy
+twitter
