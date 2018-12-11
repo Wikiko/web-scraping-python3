@@ -4,3 +4,4 @@ pytesseract
 numpy
 scrapy
 twitter
+pdfminer3k
